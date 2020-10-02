@@ -23,4 +23,8 @@
 	// Scrolly.
 		$('.scrolly').scrolly();
 
+	//Lazy Load Images using Lozad
+	const observer = lozad();
+	observer.observe();
+
 })(jQuery);
