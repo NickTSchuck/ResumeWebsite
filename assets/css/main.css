@@ -277,6 +277,15 @@ input, select, textarea {
 				width: 100% !important;
 			}
 
+			ul.list-skillset{
+				list-style-position: inside;
+				text-align: left;
+				margin-left: 40%;
+			}
+			
+			ul.list-skillset ul {
+				list-style-position: inside;
+			}
 		}
 
 		@media screen and (max-width: 480px) {
@@ -285,6 +294,15 @@ input, select, textarea {
 				max-width: calc(100% - 3em);
 			}
 
+			ul.list-skillset{
+				list-style-position: inside;
+				text-align: left;
+				margin-left: 40%;
+			}
+			
+			ul.list-skillset ul {
+				list-style-position: inside;
+			}
 		}
 
 /* Row */
