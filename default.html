@@ -8,9 +8,41 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			.selfie-pic {
-		width: 278px;
-		border-radius: 50%;
-	}
+				width: 278px;
+				border-radius: 50%;
+			}
+
+			.header-jobtitle {
+				margin-bottom: 0;
+				font-weight: bold;
+			}
+
+			form.contact-form fieldset.contact-fieldset {
+				border: 2px;
+				border-radius: 8px;
+				border-style: solid;
+			}
+
+			form.contact-form fieldset.contact-fieldset input.simpleContactFormInput {
+				width: 30%; 
+				margin-left: 35%; 
+				background-color: white;
+				color: black;
+			}
+
+			form.contact-form fieldset.contact-fieldset textarea.richContactFormInput {
+				width: 80%; 
+				margin-left: 10%; 
+				background-color: white;
+				color: black;
+			}
+
+			form.contact-form fieldset.contact-fieldset textarea:focus,
+			form.contact-form fieldset.contact-fieldset input:focus {
+				border-color: #E44D26;
+				border-width: 3px;
+				
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -70,7 +102,7 @@
 							<header class="major">
 								<h2>Skills</h2>
 							</header>
-							<ul>
+							<ul class="list-skillset">
 								<li>HTML5</li>
 								<li>CSS3
 									<ul class="nested-skillset">
@@ -89,6 +121,13 @@
 									<ul class="nested-skillset">
 										<li>Web Forms</li>
 										<li>MVC</li>
+									</ul>
+								</li>
+								<li>
+									Data Storage
+									<ul class="nested-skillset">
+										<li>Microsoft SQL Server</li>
+										<li>MongoDB</li>
 									</ul>
 								</li>									
 								<li>Source Control
@@ -111,7 +150,8 @@
 					</header>
 					<div class="row gtr-150">
 						<div class="col-4 col-12-medium">
-							<h3><strong>Levi, Ray & Shoup<br/>Lead Software Developer</strong></h3>
+							<h3 class="header-jobtitle">Levi, Ray & Shoup</h3>
+							<h3 class="header-jobtitle">Lead Software Developer</h3>
 							<h3>September 2018 - Present</h3>
 							<p>
 								As a lead software developer, I customize and implement our base product's web application while working directly with
@@ -120,7 +160,8 @@
 							</p>
 						</div>
 						<div class="col-4 col-12-medium">
-							<h3><strong>IMA Automation-North America<br/>Controls Engineer</strong></h3>
+							<h3 class="header-jobtitle">IMA Automation-North America</h3>
+							<h3 class="header-jobtitle">Controls Engineer</h3>
 							<h3>May 2016 - September 2018</h3>
 							<p style="margin-bottom: .4em;">
 								Code and implement various software components for medical automation machines, including:
@@ -132,7 +173,8 @@
 							</p>
 						</div>
 						<div class="col-4 col-12-medium">
-							<h3><strong>Wema-Vogtland<br/>Software Developer Intern</strong></h3>
+							<h3 class="header-jobtitle">Wema-Vogtland</h3>
+							<h3 class="header-jobtitle">Software Developer Intern</strong></h3>
 							<h3>Summer 2015</h3>
 							<p>Worked alongside senior developers to code and implement programmable logic controllers and HMI applications (as well as get the coffee!).</p>
 						</div>
@@ -142,42 +184,39 @@
 
 		<!-- Four -->
 			<section id="four" class="main style2 special">
-				<div class="container">
-					<header class="major">
+				<div class="container" style="min-height: 10px;">
+					<!-- <header class="major">
 						<h2>Interested to know more? Questions?</h2>
 					</header>
 					<div>
-						<p>
-							Contact form coming soon.
-						</p>
-					</div>
-					<!-- <section>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field half"><input type="text" class="contact-input" name="name" id="name" placeholder="Name" /></div>
-								<div class="field half"><input type="email" class="contact-input" name="email" id="email" placeholder="Email" /></div>
-								<div class="field"><textarea name="message" class="contact-input" id="message" placeholder="Message" rows="4"></textarea></div>
-							</div>
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
-						</form>
-					</section>
-				</div> -->
+						<form action="#" class="contact-form">
+							<fieldset class="contact-fieldset">
+								<legend>Contact Form</legend>
+									<label for="fromemailaddress-input" >Email Address</label>
+									<input type="email" id="fromemailaddress-input" class="simpleContactFormInput" placeholder="Your Email">
+
+									<label for="emailsubject-input">Subject</label>
+									<input type="text" id="emailsubject-input" class="simpleContactFormInput" placeholder="Subject">
+
+									<label for="emailbody-input">Message</label>
+									<textarea id="emailbody-input" placeholder="Message..." class="richContactFormInput" rows="4"></textarea>														
+							</fieldset>							
+						</form>						
+					</div> -->
 			</section>
 
 		<!-- Footer -->
 			<section id="footer">
-				<ul class="icons">
+				<!-- <ul class="icons">
 					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
+				</ul> -->
+				<!-- <ul class="copyright">
 					<li>&copy; Nick Schuck</li>
-				</ul>
+				</ul> -->
 			</section>
 
 		<!-- Scripts -->
